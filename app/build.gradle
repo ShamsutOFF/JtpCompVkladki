@@ -78,8 +78,9 @@ dependencies {
 
     //Coil for Compose
     implementation "dev.chrisbanes.accompanist:accompanist-coil:0.3.3.1"
+    //Coil v.2 for Compose
+    implementation("io.coil-kt:coil-compose:1.4.0")
 
-    //koin
     // Koin AndroidX Scope features
     implementation "org.koin:koin-androidx-scope:2.2.1"
 // Koin AndroidX ViewModel features
