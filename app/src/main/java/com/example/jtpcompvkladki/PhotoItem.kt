@@ -14,7 +14,6 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 import com.example.jtpcompvkladki.model.Photo
 
-
 @Composable
 fun PhotoItem(photo: Photo) {
     Card( modifier = Modifier
@@ -38,20 +37,4 @@ fun PhotoItem(photo: Photo) {
     ) {
 
     }
-}
-
-
-
-@Composable
-fun MovieTitle(
-    title: String,
-    modifier: Modifier = Modifier,
-) {
-    Text(
-        modifier = modifier,
-        text = title,
-        maxLines = 2,
-        style = MaterialTheme.typography.h6,
-        overflow = TextOverflow.Ellipsis
-    )
 }

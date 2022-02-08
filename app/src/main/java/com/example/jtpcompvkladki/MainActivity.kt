@@ -47,9 +47,6 @@ class MainActivity : ComponentActivity() {
             PhotoList(mainViewModel.photos)
         }
     }
-
-
-
 }
 
 @Composable
@@ -65,39 +62,6 @@ fun PhotoList(photos: Flow<PagingData<Photo>>) {
     }
 }
 
-//@Composable
-//fun PhotoUI(viewModel: MainViewModel) {
-//    val photos = viewModel.getPhotoPagination().collectAsLazyPagingItems()
-//    LazyColumn(modifier = Modifier
-//        .fillMaxWidth()
-//        .fillMaxHeight()) {
-//        items(photos.itemCount) { photo ->
-//            Box {
-//            Text(text = "TEXT!!!")
-//
-//            /*
-//                photo?.downloadUrl?.let {
-//                    CoilImage(
-//                        model = it,
-//                        modifier = Modifier.fillMaxWidth()
-//                            .border(
-//                                width = 4.dp,
-//                                color = Color.White,
-//                                shape = RoundedCornerShape(0.dp)
-//                            )
-//                    )
-//                }
-//                BasicText(
-//                    style = TextStyle(fontWeight = FontWeight.Bold),
-//                    text = "Clicked by: " + photo?.author.toString(),
-//                    modifier = Modifier.padding(top = 8.dp, start = 4.dp)
-//                        .background(color = Color.White)
-//                        .padding(4.dp)
-//                )*/
-//            }
-//        }
-//    }
-//}
 
 @ExperimentalPagerApi
 @ExperimentalMaterialApi
